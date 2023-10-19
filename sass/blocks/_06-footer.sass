@@ -1,0 +1,53 @@
+.footer
+   background: #272727
+   padding-top: 1rem
+   &__row-1
+      display: flex
+      gap: 11rem
+      justify-content: center
+      @media screen and ( max-width: 510px)
+         flex-direction: column
+         gap: 2rem
+         align-items: center
+   &__row-2
+      background: #000
+      text-align: center
+      color: $text-gray
+      text-shadow: $sh-text
+      font-family: $main-font
+      font-size: 1.8rem
+      padding: 1.3rem 0
+   &__site-map-title, &__contacts-title
+      text-align: center
+      color: $text-gray
+      text-shadow: $sh-text
+      font-family: $main-font
+      font-size: 2.2rem
+      margin-bottom: 1.3rem
+   &__site-map-item,  &__contacts-item
+      margin-bottom: 1.1rem
+   &__site-map-link, &__contacts-link
+      color: $text-gray
+      text-shadow: $sh-text
+      font-family: $main-font
+      font-size: 1.8rem
+      padding-left: 3.5rem
+      position: relative
+      &::before
+         content: ''
+         position: absolute
+         top: 0.7rem
+         left: 1.8rem
+         width: 0.7rem
+         height: 0.7rem
+         border-radius: 50%
+         background: $text-gray
+   &__contacts-item-list
+      display: flex
+      align-items: center
+      gap: 2rem
+      // @media screen and ( max-width: 510px)
+      //    flex-direction: column
+
+.contacts-list__img-footer
+   width: 3rem

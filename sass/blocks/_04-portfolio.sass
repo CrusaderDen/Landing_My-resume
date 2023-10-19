@@ -1,0 +1,56 @@
+.portfolio
+   &__bg-top
+      background: url(/img/portfolio-bg.png) center/cover no-repeat
+      height: 7rem
+   &__bg-center
+      background: #000
+      min-height: 50rem 
+      padding-bottom: 10rem  
+   &__bg-bottom
+      background: url(/img/portfolio-bg.png) center/cover no-repeat
+      transform: rotate(180deg)
+      height: 7rem
+   &__title
+      color: #fff
+      padding-top: 2.3rem
+      margin-bottom: 3.3rem
+   &__cards
+      display: grid
+      grid-template-columns:  repeat(auto-fit, minmax(310px, 1fr))
+      justify-items: center
+      grid-gap: 8rem
+
+
+
+   .portfolio-card //стили карточки
+      width: 33rem
+      height: 33.4rem
+      background: #fff
+      display: grid
+      justify-items: center
+      filter: drop-shadow(8px 8px 10px #809F3C) drop-shadow(-4px -4px 4px #809F3C)
+      border: 1px solid #CCC
+      transition: all 0.3s
+      &:hover
+         transform: translate(1rem, -1rem) scale(1.1)
+      &__img
+         height: 20rem
+         width: auto
+      &__title
+         color: $text-black
+         font-family: $third-font
+         font-size: 1.8rem
+         text-align: center
+      &__btn
+         display: flex
+         justify-content: center
+         align-items: center
+         width: 16rem
+         height: 4rem
+         text-decoration: underline
+         font-family: $main-font
+         color: $text-black
+         font-size: 1.6rem
+         border: 1px solid #CCC
+         transition: all 0.3s
+         

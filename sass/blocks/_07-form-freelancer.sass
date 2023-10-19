@@ -1,0 +1,167 @@
+.form.form-up
+   opacity: 1
+   z-index: 999
+   visibility: visible
+.form
+   width: 100%
+   min-width: 30rem
+   height: 100%
+   position: fixed
+   left: 0
+   top: 0
+   background-color: rgba(16, 16, 16, .9)
+   display: flex
+   align-items: center
+   justify-content: center
+   flex-direction: column
+   padding: 1rem
+   transition: .5s
+   opacity: 0
+   visibility: hidden
+   &__body
+      width: 100%
+      max-width: 58rem
+      min-width: 32rem
+      background-color: #ffffff
+      border-radius: .5rem
+      position: relative
+      padding: 3rem
+      display: flex
+      flex-direction: column
+      overflow-x: hidden
+      overflow-y: auto
+   &__title
+      font-size: 4rem
+      padding: 0.5rem 0
+      text-align: center
+.form__body:before
+   content: ''
+   position: fixed
+   top: 0
+   left: 0
+   width: 100%
+   height: 100%
+   background: rgba(0, 0, 0, .5) url('../icons/load-indicator.gif') no-repeat center / 64px
+   z-index: 2
+   opacity: 0
+   visibility: hidden
+   transition: all .3s
+
+.form__body._sending:before
+   opacity: 1
+   visibility: visible
+
+.form__item
+   margin: 0 0 2rem 0
+
+.form__label
+   display: block
+   margin: 0 0 .5rem 0
+   font-size: 1.8rem
+
+.form__input
+   width: 100%
+   font-size: 1.8rem
+   border: 1px solid #cccccc
+   padding: 1rem
+   outline: none
+
+textarea.form__input
+   min-height: 20rem
+   resize: vertical
+
+.form__input._error
+   box-shadow: 0 0 0 1px rgb(255, 0, 0)
+
+.checkbox__input
+   display: block
+   width: 0
+   height: 0
+   appearance: inherit
+
+.checkbox__label
+   font-size: 14px
+   display: inline-flex
+   align-items: center
+   position: relative
+   cursor: pointer
+
+.checkbox__input:checked + .checkbox__label:after
+   transform: scale(1)
+
+.checkbox__label:before
+   content: ''
+   align-self: flex-start
+   flex: 0 0 1.8rem
+   height: 1.8rem
+   background-color: #ffffff
+   border: 1px solid #cccccc
+   margin: 0 1rem 0 0
+   border-radius: .3rem
+
+.checkbox__input._error + .checkbox__label:before
+   box-shadow: 0 0 0 1px rgb(255, 0, 0)
+
+.checkbox__label:after
+   content: ''
+   width: 1rem
+   height: 1rem
+   position: absolute
+   top: .4rem
+   left: .4rem
+   background-color: #000000
+   border-radius: .3rem
+   transform: scale(0)
+   transition: .3s
+
+.form__button
+   width: 100%
+   min-height: 4rem
+   font-size: 1.6rem
+   text-align: center
+   background-color: #327e9f
+   color: #ffffff
+   font-weight: 500
+   letter-spacing: .2rem
+   text-transform: uppercase
+   border-radius: .5rem
+   display: flex
+   align-items: center
+   justify-content: center
+   cursor: pointer
+   transition: .3s
+   box-shadow: 0 5px 0 0 rgba(0, 0, 0, .2)
+   position: relative
+   top: 0
+
+.form__button:hover
+   background-color: #1e6a8b
+
+.form__button:active
+   top: .3rem
+   box-shadow: 0 2px 0 0 rgba(0, 0, 0, .2)
+
+.checkbox__label span
+   color: #949494
+
+.form__close
+   align-self: flex-end
+   cursor: pointer
+   background: transparent
+   display: flex
+   align-items: center
+   outline: none
+   transition: all .3s
+   font-size: 1.8rem
+
+.form__close:hover
+   color: #b6062d
+
+.form__close:after
+   content: ''
+
+   width: 2rem
+   height: 2rem
+
+   display: inline-block
+   background: url('../icons/cross.svg') no-repeat center / cover

@@ -1,0 +1,100 @@
+.resume
+   padding-top: 4rem
+   background: linear-gradient(180deg, #c5c5c5 0.05%, #FFF 46.7%)
+   &__title
+      @media screen and ( max-width: 650px)
+         margin-bottom: 2.5rem   
+   &__row-1
+      margin-bottom: 2rem
+   &__row-2
+      margin-bottom: 3rem
+   &__row-2
+      margin-bottom: 6.4rem
+      @media screen and ( max-width: 768px)
+         margin-bottom: 3rem
+
+.resume-row-1
+   display: grid
+   grid-template-columns: repeat(2,1fr)
+   justify-items: center
+   align-items: center
+   @media screen and ( max-width: 650px)
+      grid-template-columns: auto
+      gap: 3rem
+
+      
+   &__img
+      width: 34rem
+   &__title-list
+      justify-self: start
+      display: grid
+      grid-gap: 2rem
+.resume-row-2
+   &__title
+      margin-bottom: 2.5rem
+      
+
+.resume-table
+   display: grid
+   grid-template-columns: 1fr min-content 1fr min-content 2fr min-content 2fr
+   @media screen and ( max-width: 970px)
+      grid-template-columns: auto
+      grid-gap: 2rem
+      justify-items: start
+
+   & > div
+      padding: 0 4rem
+      @media screen and ( max-width: 970px)
+         padding: 0
+         
+
+.resume-row-3
+   &__title
+      margin-bottom: 3rem
+      @media screen and ( max-width: 970px)
+         margin-bottom: 1rem
+   &__item-list
+      padding-top: 1rem
+      margin-bottom: 1.1rem
+   &__item
+      color: $text-black
+      font-family: $main-font
+      // text-shadow: $sh-text
+      font-size: 2.5rem
+      padding-left: 1.5rem
+      margin-bottom: 3rem
+      position: relative
+      &::after
+         content: ''
+         position: absolute
+         top: 1rem
+         left: 0
+         width: 0.5rem
+         height: 0.5rem
+         background-color: $text-black
+         border-radius: 50%
+   &__span
+      position: relative
+      &::before
+         content: ''
+         position: absolute
+         bottom: -0.9rem  
+         left: 1rem
+         background-color: rgba(37, 183, 69, 0.30)
+         height: 0.9rem
+         width: 100%
+         border-radius: 1rem
+   &__item-list-item
+      color: $text-black
+      font-family: $main-font
+      font-size: 2rem
+      padding-left: 4.5rem
+      position: relative
+      &:not(:last-child)
+         margin-bottom: 1.1rem
+      &::after
+         content: '-'
+         position: absolute
+         top: 0
+         left: 2.5rem
+         

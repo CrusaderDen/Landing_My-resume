@@ -1,0 +1,46 @@
+.intro
+   width: 100%
+   height: 100vh
+   overflow: hidden
+   position: relative
+   // max-height: -webkit-fill-available
+   &::before
+      content: ''
+      position: absolute
+      top: 0
+      left: 0
+      width: 100%
+      height: 100%
+      background: linear-gradient(0deg, rgba(0, 0, 0, 0.70) 0%, rgba(0, 0, 0, 0.70) 100%)
+      z-index: 1
+   &__img
+      width: 100%
+      height: 100%
+      object-fit: cover
+      object-position: bottom
+   &__inner
+      text-align: center
+      position: absolute
+      width: 90%
+      z-index: 10
+      top: 50%
+      left: 50%
+      transform: translate(-50%, -50%)
+   &__name
+      margin-bottom: 5rem
+   &__btn
+      transition: all 0.5s
+      position: absolute
+      z-index: 10
+      bottom: 5%
+      left: 50%
+      transform: translate(-50%, -50%)
+      @media screen and ( max-width: 768px)
+         width: 6rem
+         height: 6rem
+
+
+
+
+   
+ 

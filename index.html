@@ -1,0 +1,700 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Денис Крестов</title>
+   <meta name="description" content="Разработчик Денис Крестов - верстка, настройка, оптимизация сайтов.">
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container header-content">
+        <div class="header__logo">
+          <!-- <img class="header__img" src="icons/logo-2.svg" alt=""> -->
+          <!-- <marquee class="run-row" behavior="scroll" direction="left" scrollamount="5">Разработка сайтов для вашего бизнеса</marquee> -->
+        </div>
+        <ul class="header__contacts contacts-list">
+          <li class="contacts-list__item">
+            <a href="https://t.me/crusaderDen" class="contacts-list__link">
+              <svg
+                class="contacts-list__img"
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                image-rendering="optimizeQuality"
+                shape-rendering="geometricPrecision"
+                text-rendering="geometricPrecision"
+                viewBox="0 0 137 137"
+              >
+                <circle cx="68.5" cy="68.5" r="68.5" fill="#2c3ae5"></circle>
+                <path
+                  fill="#fefefe"
+                  d="M96.49 37.12 86.7 95.83c-.13.74-.53 1.31-1.22 1.72-.36.21-.75.31-1.19.31-.28 0-.58-.07-.91-.19l-17.32-7.08-9.25 11.28c-.46.59-1.08.88-1.87.88-.33 0-.61-.05-.84-.15-.49-.18-.88-.48-1.17-.9-.29-.42-.44-.89-.44-1.4V86.96l33.03-40.48-40.87 35.36-15.09-6.19c-.95-.36-1.46-1.06-1.53-2.1-.05-1.02.35-1.77 1.22-2.26l63.61-36.7a2.415 2.415 0 0 1 2.6.08c.84.61 1.18 1.43 1.03 2.45z"
+                ></path>
+              </svg>
+            </a>
+          </li>
+          <li class="contacts-list__item">
+            <a href="#!" class="contacts-list__link">
+              <svg
+                class="contacts-list__img"
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                image-rendering="optimizeQuality"
+                shape-rendering="geometricPrecision"
+                text-rendering="geometricPrecision"
+                viewBox="0 0 137 137"
+              >
+                <circle cx="68.5" cy="68.5" r="68.5" fill="#2c3ae5"></circle>
+                <path
+                  fill="#fefefe"
+                  d="M103.71 76.43c.55-2.43.83-4.95.83-7.54 0-19.4-15.96-35.14-35.64-35.14-2.08 0-4.11.18-6.1.51a20.817 20.817 0 0 0-10.99-3.12c-11.42 0-20.67 9.12-20.67 20.38 0 3.76 1.04 7.28 2.84 10.31-.48 2.28-.72 4.64-.72 7.06 0 19.41 15.95 35.14 35.64 35.14 2.23 0 4.41-.2 6.52-.58 2.92 1.54 6.24 2.41 9.78 2.41 11.41 0 20.66-9.12 20.66-20.38 0-3.25-.77-6.32-2.15-9.05zM86.9 85.59c-1.65 2.3-4.09 4.12-7.24 5.42-3.13 1.27-6.88 1.92-11.14 1.92-5.12 0-9.41-.89-12.76-2.64-2.4-1.27-4.37-2.99-5.87-5.13-1.51-2.15-2.28-4.29-2.28-6.35 0-1.29.5-2.4 1.48-3.31.98-.91 2.23-1.37 3.72-1.37 1.23 0 2.29.36 3.15 1.07.81.69 1.52 1.71 2.09 3.02.63 1.43 1.32 2.63 2.04 3.57.7.92 1.71 1.69 2.99 2.28 1.29.61 3.03.91 5.18.91 2.94 0 5.36-.62 7.18-1.84 1.77-1.19 2.63-2.63 2.63-4.39 0-1.38-.44-2.47-1.37-3.33-.97-.89-2.25-1.59-3.81-2.07-1.61-.49-3.81-1.03-6.53-1.6-3.7-.78-6.84-1.7-9.34-2.75-2.56-1.07-4.62-2.56-6.13-4.42-1.53-1.89-2.3-4.25-2.3-7.04 0-2.66.81-5.05 2.41-7.11 1.6-2.05 3.93-3.65 6.92-4.73 2.97-1.08 6.48-1.63 10.46-1.63 3.19 0 5.98.37 8.32 1.08 2.35.72 4.33 1.69 5.89 2.89 1.56 1.21 2.73 2.5 3.46 3.84.74 1.35 1.11 2.7 1.11 4.01 0 1.26-.48 2.4-1.46 3.39-.97 1-2.2 1.51-3.66 1.51-1.32 0-2.35-.32-3.07-.94-.66-.59-1.35-1.5-2.12-2.8-.89-1.66-1.97-2.98-3.2-3.9-1.2-.9-3.2-1.35-5.95-1.35-2.56 0-4.63.5-6.18 1.5-1.49.96-2.21 2.06-2.21 3.37 0 .8.24 1.47.71 2.04.51.62 1.23 1.15 2.13 1.59.93.47 1.9.84 2.87 1.1.98.27 2.65.67 4.93 1.19 2.88.62 5.54 1.3 7.88 2.04 2.37.75 4.42 1.67 6.1 2.74 1.7 1.1 3.05 2.5 4.01 4.19.96 1.68 1.45 3.77 1.45 6.19 0 2.89-.84 5.53-2.49 7.84z"
+                ></path>
+              </svg>
+            </a>
+          </li>
+          <li class="contacts-list__item">
+            <a href="tel:+79806892030" class="contacts-list__link">
+              <svg
+                class="contacts-list__img"
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                image-rendering="optimizeQuality"
+                shape-rendering="geometricPrecision"
+                text-rendering="geometricPrecision"
+                viewBox="0 0 27.13 27.13"
+              >
+                <circle cx="13.56" cy="13.56" r="13.56" fill="#2c3ae5"></circle>
+                <path
+                  fill="#fefefe"
+                  d="M16.73 14.92c-.91.9-.91 1.81-1.81 1.81s-1.81-.91-2.71-1.81c-.91-.9-1.81-1.81-1.81-2.71 0-.91.9-.91 1.81-1.81.9-.91-1.81-3.62-2.72-3.62-.9 0-2.71 2.71-2.71 2.71 0 1.81 1.86 5.48 3.62 7.24 1.76 1.76 5.42 3.62 7.23 3.62 0 0 2.72-1.81 2.72-2.72 0-.9-2.72-3.61-3.62-2.71z"
+                ></path>
+              </svg>
+            </a>
+          </li>
+          <li class="contacts-list__item">
+            <a href="mailto:rupo@list.ru" class="contacts-list__link">
+              <svg
+                class="contacts-list__img"
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                image-rendering="optimizeQuality"
+                shape-rendering="geometricPrecision"
+                text-rendering="geometricPrecision"
+                viewBox="0 0 132.25 132.25"
+              >
+                <circle cx="66.13" cy="66.13" r="66.13" fill="#2c3ae5"></circle>
+                <path
+                  fill="#fefefe"
+                  d="M39.41 56.9c.84.55 3.36 2.17 7.56 4.87 4.21 2.7 7.43 4.78 9.67 6.23.25.16.77.51 1.57 1.05.8.53 1.46.96 1.99 1.29.53.33 1.17.7 1.92 1.11.75.41 1.46.72 2.12.93.67.2 1.28.3 1.85.3h.07c.57 0 1.18-.1 1.85-.3.66-.21 1.37-.52 2.12-.93.75-.41 1.39-.78 1.92-1.11.53-.33 1.19-.76 1.99-1.29.8-.54 1.32-.89 1.57-1.05 2.26-1.45 8.02-5.15 17.27-11.1 1.79-1.16 3.29-2.56 4.5-4.2 1.21-1.64 1.81-3.36 1.81-5.16 0-1.5-.59-2.78-1.75-3.85-1.17-1.07-2.56-1.61-4.16-1.61H38.97c-1.9 0-3.36.59-4.38 1.78-1.02 1.18-1.53 2.66-1.53 4.44 0 1.43.68 2.99 2.03 4.66 1.35 1.67 2.79 2.99 4.32 3.94zm56.09 3.66c-8.07 5.05-14.2 8.98-18.38 11.78-1.4.96-2.54 1.7-3.41 2.24-.87.54-2.04 1.08-3.49 1.64-1.45.56-2.8.84-4.06.84h-.07c-1.26 0-2.61-.28-4.06-.84-1.45-.56-2.61-1.1-3.49-1.64-.87-.54-2.01-1.28-3.41-2.24-3.32-2.25-9.43-6.18-18.34-11.78-1.4-.87-2.64-1.86-3.73-2.97v27.12c0 1.5.58 2.79 1.74 3.86 1.15 1.07 2.54 1.6 4.17 1.6h54.31c1.63 0 3.02-.53 4.17-1.6 1.16-1.07 1.74-2.36 1.74-3.86V57.59a20.328 20.328 0 0 1-3.69 2.97z"
+                ></path>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </header>
+    <div class="main">
+      <section class="intro">
+        <picture>
+          <source
+            srcset="img/intro-bg-lg-1.webp"
+            type="image/webp"
+            media="(min-width:1330px)"
+          />
+          <source
+            srcset="img/intro-bg-md-1.webp"
+            type="image/webp"
+            media="(min-width:992px)"
+          />
+          <source
+            srcset="img/intro-bg-sm-1.webp"
+            type="image/webp"
+            media="(max-width:992px)"
+          />
+          <img
+            src="img/intro-bg-lg-1.webp"
+            alt="programmer-office"
+            class="intro__img"
+          />
+        </picture>
+
+        <div class="intro__inner">
+          <div class="intro__name title-normal title-normal_yellow fz64">
+            Денис Крестов
+          </div>
+          <h1 class="intro__title title-normal title-normal_white fz86">
+            Фронтенд-разработчик
+          </h1>
+        </div>
+        <img src="icons/btn-down.svg" alt="button" class="intro__btn" />
+      </section>
+      <section class="resume" id="id-resume">
+        <div class="container">
+          <h2 class="resume__title title-normal fz48">Резюме</h2>
+          <div class="resume__row-1 resume-row-1">
+            <img src="img/myPhoto.webp" alt="photo" class="resume-row-1__img" />
+            <ul class="resume-row-1__title-list">
+              <li class="resume-row-1__title-item title-bold fz40">
+                IT-специализация: Фронтенд
+              </li>
+              <li class="resume-row-1__title-item title-bold fz32">
+                Текущий уровень - Junior
+              </li>
+              <li class="resume-row-1__title-item title-bold fz28">
+                Локация - г. Иваново, Россия
+              </li>
+            </ul>
+          </div>
+          <div class="resume__row-2 resume-row-2">
+            <h3 class="resume-row-2__title title-normal fz32">
+              Стек технологий
+            </h3>
+            <div class="horizontal-decor-line horizontal-decor-line_top"></div>
+            <div class="resume-row-2__table resume-table">
+              <div class="table-col table-col-1">
+                <div class="table-col-1__title table-title">HTML</div>
+                <ul class="table-col-1__list">
+                  <li class="table-col-1__item table-item">БЭМ</li>
+                  <li class="table-col-1__item table-item">Семантика</li>
+                </ul>
+              </div>
+              <span class="vertical-decor-line"></span>
+              <div class="table-col table-col-2">
+                <div class="table-col-2__title table-title">CSS</div>
+                <ul class="table-col-2__list">
+                  <li class="table-col-2__item table-item">
+                    кроссбраузерность
+                  </li>
+                  <li class="table-col-2__item table-item">адаптив</li>
+                  <li class="table-col-2__item table-item">анимации</li>
+                  <li class="table-col-2__item table-item">препроцессоры</li>
+                </ul>
+              </div>
+              <span class="vertical-decor-line"></span>
+              <div class="table-col table-col-3">
+                <div class="table-col-3__title table-title">Javascript</div>
+                <ul class="table-col-3__list">
+                  <li class="table-col-3__item table-item">работа с NPM</li>
+                  <li class="table-col-3__item table-item">
+                    настройка и использование Gulp
+                  </li>
+                  <li class="table-col-3__item table-item">
+                    понимание и использование основных концепций: прототипы,
+                    event-loop, асинхронность и др.
+                  </li>
+                  <li class="table-col-3__item table-item">
+                    Взаимодействие с DOM - создание слайдеров, табов,
+                    интерактивных элементов.
+                  </li>
+                </ul>
+              </div>
+              <span class="vertical-decor-line"></span>
+              <div class="table-col table-col-4">
+                <div class="table-col-4__title table-title">Прочее</div>
+                <ul class="table-col-4__list">
+                  <li class="table-col-4__item table-item">
+                    CMS Wordpress - поверхностные знания
+                  </li>
+                  <li class="table-col-4__item table-item">
+                    Фреймворк REACT - в стадии изучения
+                  </li>
+                  <li class="table-col-4__item table-item">
+                    Опыт настройки виртуального сервера на Linux, развертывание
+                    LEMP, хостинг своих сайтов на этом сервере, получение Let’s
+                    Encrypt сертификатов безопасности
+                  </li>
+                  <li class="table-col-4__item table-item">
+                    Навык работы с документацией, в том числе на английском
+                  </li>
+                  <li class="table-col-4__item table-item">Git</li>
+                </ul>
+              </div>
+            </div>
+            <div
+              class="horizontal-decor-line horizontal-decor-line_bottom"
+            ></div>
+          </div>
+          <div class="resume__row-3 resume-row-3">
+            <div class="resume-row-3__title title-normal fz32">
+              Рассмотрю варианты сотрудничества:
+            </div>
+            <ul class="resume-row-3__list">
+              <li class="resume-row-3__item">
+                <span class="resume-row-3__span">Фриланс</span>
+                <ul class="resume-row-3__item-list">
+                  <li class="resume-row-3__item-list-item">
+                    верстка лендингов и многостраничных сайтов по имеющемуся
+                    дизайну
+                  </li>
+                  <li class="resume-row-3__item-list-item">
+                    верстка лендингов и многостраничников по образцам
+                    понравившихся заказчику сайтов
+                  </li>
+                  <li class="resume-row-3__item-list-item">
+                    помощь с хостингом сайтов (публикацией в интернете),
+                    настройка индексации в поисковых системах
+                  </li>
+                  <li class="resume-row-3__item-list-item">
+                    возможность обслуживания сайта на основе абонентской платы:
+                    внесение правок и доработок по желанию заказчика на
+                    приоритетной основе (в пределах лимита рабочего времени,
+                    зависящего от размера абонентской платы)
+                  </li>
+                  <li class="resume-row-3__item-list-item">
+                    посадка простых сайтов на CMS Wordpress
+                  </li>
+                </ul>
+                <button class="resume-row-3__btn link-btn freelance-btn">
+                  Связаться по заказу на фриланс
+                </button>
+              </li>
+              <li class="resume-row-3__item">
+                <span class="resume-row-3__span">Постоянная занятость</span>
+                <ul class="resume-row-3__item-list">
+                  <li class="resume-row-3__item-list-item">
+                    в IT-компании, либо в IT-отделе крупной компании. Главный
+                    приоритет - возможность роста и развития профессиональных
+                    навыков. Желателен офисный/гибридный режим работы.
+                    Территориально нахожусь в г. Иваново
+                  </li>
+                </ul>
+                <button class="resume-row-3__btn link-btn job-btn">
+                  Предложить постоянную занятость
+                </button>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section class="pop-up">
+        <div class="form form-freelance">
+          <form action="#" class="form__body" id="freelance-form">
+            <button class="form__close form-freelance__close" type="button">
+              Закрыть
+            </button>
+            <div class="form__title">Фриланс</div>
+            <div class="form__item">
+              <label for="formName" class="form__label">Ваше имя*:</label>
+              <input
+                id="formName"
+                type="text"
+                name="name"
+                class="form__input _req-freelance"
+              />
+            </div>
+            <div class="form__item">
+              <label for="formEmail" class="form__label">Ваш e-mail*:</label>
+              <input
+                id="formEmail"
+                type="email"
+                name="email"
+                class="form__input _req-freelance _email"
+              />
+            </div>
+            <div class="form__item">
+              <label for="formMessage" class="form__label"
+                >Ваше сообщение:</label
+              >
+              <textarea
+                name="message"
+                id="formMessage"
+                class="form__input"
+              ></textarea>
+            </div>
+            <div class="form__item">
+              <div class="checkbox">
+                <input
+                  id="formAgreement-freelance"
+                  type="checkbox"
+                  aria-checked="true"
+                  checked=""
+                  name="agreement"
+                  class="checkbox__input _req-freelance"
+                />
+                <label
+                  for="formAgreement-freelance"
+                  class="checkbox__label"
+                  tabindex="-1"
+                  ><span
+                    >Даю своё согласие на обработку персональных данных*</span
+                  ></label
+                >
+              </div>
+            </div>
+            <button class="form__button" type="submit">Отправить</button>
+          </form>
+        </div>
+        <div class="form form-job">
+          <form action="#" class="form__body" id="job-form">
+            <button class="form__close form-job__close" type="button">
+              Закрыть
+            </button>
+            <div class="form__title">Постоянная работа</div>
+            <div class="form__item">
+              <label for="formName" class="form__label">Ваше имя*:</label>
+              <input
+                id="formName"
+                type="text"
+                name="name"
+                class="form__input _req-job"
+              />
+            </div>
+            <div class="form__item">
+              <label for="formEmail" class="form__label">Ваш e-mail*:</label>
+              <input
+                id="formEmail"
+                type="email"
+                name="email"
+                class="form__input _req-job _email"
+              />
+            </div>
+            <div class="form__item">
+              <label for="formMessage" class="form__label"
+                >Ваше сообщение:</label
+              >
+              <textarea
+                name="message"
+                id="formMessage"
+                class="form__input"
+              ></textarea>
+            </div>
+            <div class="form__item">
+              <div class="checkbox">
+                <input
+                  id="formAgreement-job"
+                  type="checkbox"
+                  aria-checked="true"
+                  checked=""
+                  name="agreement"
+                  class="checkbox__input _req-job"
+                />
+                <label
+                  for="formAgreement-job"
+                  class="checkbox__label"
+                  tabindex="-1"
+                  ><span
+                    >Даю своё согласие на обработку персональных данных*</span
+                  ></label
+                >
+              </div>
+            </div>
+            <button class="form__button" type="submit">Отправить</button>
+          </form>
+        </div>
+      </section>
+      <section class="portfolio" id="id-portfolio">
+        <div class="portfolio__bg-top"></div>
+        <div class="portfolio__bg-center">
+          <div class="container">
+            <h2 class="portfolio__title title-normal fz48">Портфолио</h2>
+            <div class="portfolio__cards">
+              <div class="portfolio__card">
+                <div class="portfolio-card">
+                  <img
+                    src="img/card-img-1.webp"
+                    alt="screen"
+                    class="portfolio-card__img"
+                  />
+                  <div class="portfolio-card__title">
+                    Лендинг “Торты на заказ”
+                  </div>
+                  <a
+                    href="https://cakes.ivrupo.ru/"
+                    class="portfolio-card__btn"
+                    target="_blank"
+                    >Смотреть</a
+                  >
+                </div>
+              </div>
+              <div class="portfolio__card">
+                <div class="portfolio-card">
+                  <img
+                    src="img/card-img-2.webp"
+                    alt="screen"
+                    class="portfolio-card__img"
+                  />
+                  <div class="portfolio-card__title">
+                    Pet-проект: Лендинг “Cyberpunk”
+                  </div>
+                  <a
+                    href="https://cyberpunk.ivrupo.ru/"
+                    class="portfolio-card__btn"
+                    target="_blank"
+                    >Смотреть</a
+                  >
+                </div>
+              </div>
+              <div class="portfolio__card">
+                <div class="portfolio-card">
+                  <img
+                    src="img/card-img-3.webp"
+                    alt="screen"
+                    class="portfolio-card__img"
+                  />
+                  <div class="portfolio-card__title">
+                    Pet-проект: Лендинг “Castaway”
+                  </div>
+                  <a
+                    href="https://castaway.ivrupo.ru/"
+                    class="portfolio-card__btn"
+                    target="_blank"
+                    >Смотреть</a
+                  >
+                </div>
+              </div>
+              <div class="portfolio__card">
+                <div class="portfolio-card">
+                  <img
+                    src="img/card-img-4.webp"
+                    alt="screen"
+                    class="portfolio-card__img"
+                  />
+                  <div class="portfolio-card__title">
+                    Pet-проект: Лендинг “Balloons”
+                  </div>
+                  <a
+                    href="https://balloons.ivrupo.ru/"
+                    class="portfolio-card__btn"
+                    target="_blank"
+                    >Смотреть</a
+                  >
+                </div>
+              </div>
+              <div class="portfolio__card">
+                <div class="portfolio-card">
+                  <img
+                    src="img/card-img-5.webp"
+                    alt="screen"
+                    class="portfolio-card__img"
+                  />
+                  <div class="portfolio-card__title">
+                    Pet-проект: Лендинг “Game-club”
+                  </div>
+                  <a
+                    href="https://game-club.ivrupo.ru/"
+                    class="portfolio-card__btn"
+                    target="_blank"
+                    >Смотреть</a
+                  >
+                </div>
+              </div>
+              <div class="portfolio__card">
+                <div class="portfolio-card">
+                  <img
+                    src="img/card-img-6.webp"
+                    alt="screen"
+                    class="portfolio-card__img"
+                  />
+                  <div class="portfolio-card__title">
+                    Pet-проект: Онлайн-банк
+                  </div>
+                  <a
+                    href="https://bank.ivrupo.ru/"
+                    class="portfolio-card__btn"
+                    target="_blank"
+                    >Смотреть</a
+                  >
+                </div>
+              </div>
+              <div class="portfolio__card">
+                <div class="portfolio-card">
+                  <img
+                    src="img/card-img-7.webp"
+                    alt="screen"
+                    class="portfolio-card__img"
+                  />
+                  <div class="portfolio-card__title">
+                    Pet-проект: Лендинг “Loft-house”
+                  </div>
+                  <a
+                    href="https://crusaderden.github.io/Landing_Loft-House/"
+                    class="portfolio-card__btn"
+                    target="_blank"
+                    >Смотреть</a
+                  >
+                </div>
+              </div>
+              <div class="portfolio__card">
+                <div class="portfolio-card">
+                  <img
+                    src="img/card-img-8.webp"
+                    alt="screen"
+                    class="portfolio-card__img"
+                  />
+                  <div class="portfolio-card__title">
+                    Pet-проект: Лендинг “Guitar-tutor”
+                  </div>
+                  <a
+                    href="https://crusaderden.github.io/guitar-tutor/"
+                    class="portfolio-card__btn"
+                    target="_blank"
+                    >Смотреть</a
+                  >
+                </div>
+              </div>
+              <div class="portfolio__card">
+                <div class="portfolio-card">
+                  <img
+                    src="img/card-img-9.webp"
+                    alt="screen"
+                    class="portfolio-card__img"
+                  />
+                  <div class="portfolio-card__title">Проект: Fasady-plus</div>
+                  <a
+                    href="https://fasady-plus.ru/"
+                    class="portfolio-card__btn"
+                    target="_blank"
+                    >Смотреть</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="portfolio__bg-bottom"></div>
+      </section>
+      <section class="about-me" id="id-about-me">
+        <div class="container">
+          <h2 class="about-me__title title-normal fz48">Личная информация</h2>
+          <div class="about-me__row-1">
+            <div class="about-me__row-1-col-1 about-me-style about-me-line">
+              Возраст: 38 лет
+            </div>
+            <div class="about-me__row-1-col-2 about-me-style about-me-line">
+              Семейное положение: женат, 2 дочери
+            </div>
+            <div class="about-me__row-1-col-3 about-me-style about-me-line">
+              Водительские права: кат. В
+            </div>
+          </div>
+          <div class="about-me__row-2 about-me-style about-me-line">
+            Личные качества: работаю на результат, способен к командной работе,
+            стараюсь быть максимально надежным, могу быть ментором - часто
+            обучал новичков на предудыщем месте работы
+          </div>
+          <div class="about-me__row-3 about-me-style about-me-line">
+            Опыт работы до IT: в течении почти 13 лет работал в компании
+            “Орматек” (производство матрасов и мебели для сна), 2010г - март
+            2023 года. Занимал должности: мастер цеха, оператор станков с ЧПУ,
+            технолог производства мягкой мебели, ведущий технолог производства
+            мягкой мебели. Причина увольнения - отсутствие перспектив развития,
+            начавшееся выгорание, невысокая материальная мотивация.
+          </div>
+          <div class="about-me__row-4 about-me-style about-me-line">
+            Почему ушел именно в IT (разработку): по должности, постоянно изучал
+            или придумывал что-то новое и внедрял в производство, работал над
+            повышением автоматизации. Так же работал в большом количестве ПО
+            (CAD/CAM программы, 1С и т.д.) В какой-то момент пришел к выводу,
+            что есть возможность переобучиться на гораздо более востребованную,
+            интересную и доходную специальность и воспользовался этой
+            возможностью.
+          </div>
+          <div class="about-me__row-6 about-me-style">
+            Как учился: самостоятельно: по видео на YouTube, курсам на платформе
+            Stepik, книга “Современный учебник JavaScript” и другие. Плюс
+            максимальное количество личной практики и решения задач.
+          </div>
+        </div>
+      </section>
+    </div>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__row-1">
+          <div class="footer__site-map">
+            <div class="footer__site-map-title">Карта сайта:</div>
+            <ul class="footer__site-map-list">
+              <li class="footer__site-map-item">
+                <a href="#id-resume" class="footer__site-map-link"
+                  >Резюме и формы связи</a
+                >
+              </li>
+              <li class="footer__site-map-item">
+                <a href="#id-portfolio" class="footer__site-map-link"
+                  >Портфолио</a
+                >
+              </li>
+              <li class="footer__site-map-item">
+                <a href="#id-about-me" class="footer__site-map-link"
+                  >Личная информация</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="footer__contacts">
+            <div class="footer__contacts-title">Мои контакты:</div>
+            <ul class="footer__contacts-list">
+              <li class="footer__contacts-item">
+                <a href="mailto:RUPO@list.ru" class="footer__contacts-link"
+                  >E-mail: RUPO@list.ru</a
+                >
+              </li>
+              <li class="footer__contacts-item">
+                <ul class="footer__contacts-item-list">
+                  <li>
+                    <a href="#!" class="footer__contacts-link">Мессенджеры: </a>
+                  </li>
+                  <li class="contacts-list__item">
+                    <a
+                      href="https://t.me/crusaderDen"
+                      class="contacts-list__link"
+                    >
+                      <svg
+                        class="contacts-list__img contacts-list__img-footer"
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        image-rendering="optimizeQuality"
+                        shape-rendering="geometricPrecision"
+                        text-rendering="geometricPrecision"
+                        viewBox="0 0 137 137"
+                      >
+                        <circle
+                          cx="68.5"
+                          cy="68.5"
+                          r="68.5"
+                          fill="#2F4F4F"
+                        ></circle>
+                        <path
+                          fill="#fefefe"
+                          d="M96.49 37.12 86.7 95.83c-.13.74-.53 1.31-1.22 1.72-.36.21-.75.31-1.19.31-.28 0-.58-.07-.91-.19l-17.32-7.08-9.25 11.28c-.46.59-1.08.88-1.87.88-.33 0-.61-.05-.84-.15-.49-.18-.88-.48-1.17-.9-.29-.42-.44-.89-.44-1.4V86.96l33.03-40.48-40.87 35.36-15.09-6.19c-.95-.36-1.46-1.06-1.53-2.1-.05-1.02.35-1.77 1.22-2.26l63.61-36.7a2.415 2.415 0 0 1 2.6.08c.84.61 1.18 1.43 1.03 2.45z"
+                        ></path>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="contacts-list__item">
+                    <a href="#!" class="contacts-list__link">
+                      <svg
+                        class="contacts-list__img contacts-list__img-footer"
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        image-rendering="optimizeQuality"
+                        shape-rendering="geometricPrecision"
+                        text-rendering="geometricPrecision"
+                        viewBox="0 0 137 137"
+                      >
+                        <circle
+                          cx="68.5"
+                          cy="68.5"
+                          r="68.5"
+                          fill="#2F4F4F"
+                        ></circle>
+                        <path
+                          fill="#fefefe"
+                          d="M103.71 76.43c.55-2.43.83-4.95.83-7.54 0-19.4-15.96-35.14-35.64-35.14-2.08 0-4.11.18-6.1.51a20.817 20.817 0 0 0-10.99-3.12c-11.42 0-20.67 9.12-20.67 20.38 0 3.76 1.04 7.28 2.84 10.31-.48 2.28-.72 4.64-.72 7.06 0 19.41 15.95 35.14 35.64 35.14 2.23 0 4.41-.2 6.52-.58 2.92 1.54 6.24 2.41 9.78 2.41 11.41 0 20.66-9.12 20.66-20.38 0-3.25-.77-6.32-2.15-9.05zM86.9 85.59c-1.65 2.3-4.09 4.12-7.24 5.42-3.13 1.27-6.88 1.92-11.14 1.92-5.12 0-9.41-.89-12.76-2.64-2.4-1.27-4.37-2.99-5.87-5.13-1.51-2.15-2.28-4.29-2.28-6.35 0-1.29.5-2.4 1.48-3.31.98-.91 2.23-1.37 3.72-1.37 1.23 0 2.29.36 3.15 1.07.81.69 1.52 1.71 2.09 3.02.63 1.43 1.32 2.63 2.04 3.57.7.92 1.71 1.69 2.99 2.28 1.29.61 3.03.91 5.18.91 2.94 0 5.36-.62 7.18-1.84 1.77-1.19 2.63-2.63 2.63-4.39 0-1.38-.44-2.47-1.37-3.33-.97-.89-2.25-1.59-3.81-2.07-1.61-.49-3.81-1.03-6.53-1.6-3.7-.78-6.84-1.7-9.34-2.75-2.56-1.07-4.62-2.56-6.13-4.42-1.53-1.89-2.3-4.25-2.3-7.04 0-2.66.81-5.05 2.41-7.11 1.6-2.05 3.93-3.65 6.92-4.73 2.97-1.08 6.48-1.63 10.46-1.63 3.19 0 5.98.37 8.32 1.08 2.35.72 4.33 1.69 5.89 2.89 1.56 1.21 2.73 2.5 3.46 3.84.74 1.35 1.11 2.7 1.11 4.01 0 1.26-.48 2.4-1.46 3.39-.97 1-2.2 1.51-3.66 1.51-1.32 0-2.35-.32-3.07-.94-.66-.59-1.35-1.5-2.12-2.8-.89-1.66-1.97-2.98-3.2-3.9-1.2-.9-3.2-1.35-5.95-1.35-2.56 0-4.63.5-6.18 1.5-1.49.96-2.21 2.06-2.21 3.37 0 .8.24 1.47.71 2.04.51.62 1.23 1.15 2.13 1.59.93.47 1.9.84 2.87 1.1.98.27 2.65.67 4.93 1.19 2.88.62 5.54 1.3 7.88 2.04 2.37.75 4.42 1.67 6.1 2.74 1.7 1.1 3.05 2.5 4.01 4.19.96 1.68 1.45 3.77 1.45 6.19 0 2.89-.84 5.53-2.49 7.84z"
+                        ></path>
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="footer__row-2">Разработка - Денис Крестов, 2023</div>
+    </footer>
+    <script src="js/script.js"></script>
+  </body>
+</html>
