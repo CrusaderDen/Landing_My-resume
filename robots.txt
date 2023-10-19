@@ -1,0 +1,18 @@
+User-agent: *
+Allow: /img/
+Allow: /icons/
+Disallow: /js/
+Disallow: /css/
+Disallow: /phpmailer/
+
+
+User-agent: Googlebot
+Allow: /
+Disallow: /phpmailer/
+
+User-agent: Yandex
+Allow: /img/
+Allow: /icons/
+Disallow: /js/
+Disallow: /css/
+Disallow: /phpmailer/
